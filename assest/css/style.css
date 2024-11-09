@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: "Staatliches", sans-serif;
+  font-weight: 400; */
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  background-color: #375264;
+  color: #d6f1fa;
+  /* display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-areas:
+    "top top top top top top top top top top top top"
+    "main main main main main main main main main main main main"
+    "l l l l m m m m r r r r"
+    "ll ll ll ll mm mm mm mm rr rr rr rr"
+    "ft ft ft ft ft ft ft ft ft ft ft ft";
+  gap: 10px; */
+  margin: 30px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-color: #4e6f7a;
+  border-radius: 15px;
+}
+
+nav h1 {
+  width: 200px;
+  font-size: 1.6rem;
+  color: #d6f1fa;
+}
+
+nav ul.main-nav {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 35px;
+  font-size: 1.2rem;
+}
+
+header ul.main-nav a {
+  text-decoration: none;
+  color: #d6f1fa;
+}
+
+header ul.main-nav li :hover {
+  color: #f88853;
+}
+
+main {
+  grid-area: main;
+}
+
+main div.img {
+  background-image: url("../imgs/main-pic.webp");
+  background-size: cover;
+  margin-top: 30px;
+  border-radius: 5px;
+  width: 100%;
+  height: 600px;
+}
+
+main h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2.4rem;
+  font-weight: bolder;
+  background: #f88853;
+  background: linear-gradient(to right, #f88853 0%, #4b697c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+section.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  margin-top: 30px;
+}
+
+main section div {
+  /* border: 1px solid black; */
+  height: 300px;
+}
+
+div.posts-header h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+  text-shadow: -4px 3px 1px rgba(206, 89, 55, 0.63);
+}
+
+div.posts-header h3 span {
+  color: #f88853;
+  text-shadow: -4px 3px 1px rgba(206, 89, 55, 0.63);
+}
+
+div.post1 {
+  background-image: url("../imgs/Travel-to-Paris.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 20px;
+}
+
+div.post2 {
+  background-image: url("../imgs/jerusalem.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 20px;
+}
+
+div.post3 {
+  background-image: url("../imgs/Gaza.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 20px;
+}
+
+div.post4 {
+  background-image: url("../imgs/amstrdam.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 20px;
+}
+
+div.post5 {
+  background-image: url("../imgs/turkey.webp");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 20px;
+}
+
+div.post6 {
+  background-image: url("../imgs/almaldif.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 20px;
+}
+
+div.post p {
+  text-align: center;
+  background-color: #0d4265;
+  width: 80%;
+  height: 16%;
+  margin-bottom: -15px;
+  border-radius: 12px;
+}
+
+div.post p a {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #d6f1fa;
+  color: #62849e;
+  font-weight: bolder;
+  border: none;
+  height: 30px;
+  padding: 2px;
+  border-radius: 7px;
+}
+
+div.post p a:hover {
+  background-color: #f88853;
+  color: #d6f1fa;
+}
+
+section.fav-posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 160px;
+  margin-top: 40px;
+}
+
+section.fav-posts div.fav-p1 {
+  height: 390px;
+  background-image: url("../imgs/london.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.fav-posts div.fav-p2 {
+  height: 390px;
+  background-image: url("../imgs/Gza2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section.fav-posts div.post-v {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 20px;
+}
+
+section.fav-posts div.post-v p {
+  background-color: #632f17;
+  border-radius: 8px;
+  height: 45px;
+  width: 190px;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: -20px;
+}
+
+div.posts-header h4 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 1.6rem;
+  text-shadow: -4px 3px 1px rgba(206, 89, 55, 0.63);
+}
+
+div.foot {
+  margin-top: 60px;
+  background-color: #4e6f7a;
+  color: #d6f1fa;
+  text-align: center;
+  border-radius: 8px;
+}
+
+div.foot p a {
+  text-decoration: none;
+  color: #f88853;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+div.foot p a:hover {
+  color: #000000;
+}
