@@ -55,9 +55,9 @@ main div.img {
   background-image: url("../imgs/main-pic.webp");
   background-size: cover;
   margin-top: 30px;
-  border-radius: 5px;
+  border-radius: 20px;
   width: 100%;
-  height: 600px;
+  height: 580px;
 }
 
 main h2 {
@@ -164,7 +164,7 @@ div.post6 {
 
 div.post p {
   text-align: center;
-  background-color: #0d4265;
+  background-color: #4e6f7a;
   width: 80%;
   height: 16%;
   margin-bottom: -15px;
@@ -175,7 +175,7 @@ div.post p a {
   text-decoration: none;
   cursor: pointer;
   background-color: #d6f1fa;
-  color: #62849e;
+  color: #4e6f7a;
   font-weight: bolder;
   border: none;
   height: 30px;
@@ -221,7 +221,7 @@ section.fav-posts div.post-v {
 }
 
 section.fav-posts div.post-v p {
-  background-color: #632f17;
+  background-color: #f88853;
   border-radius: 8px;
   height: 45px;
   width: 190px;
@@ -255,10 +255,6 @@ div.foot p a {
 div.foot p a:hover {
   color: #000000;
 }
-
-@import url("../css/me.css");
-@import url("./about.css");
-@import url("./contact.css");
 
 @media (max-width: 500px) {
   nav {
@@ -344,3 +340,99 @@ div.foot p a:hover {
     font-size: 0.8rem;
   }
 }
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  /* Nav */
+  nav {
+    flex-direction: row;
+    padding: 15px;
+  }
+
+  nav h1#hm {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  nav ul.main-nav {
+    font-size: 1.1rem;
+    column-gap: 25px;
+  }
+
+  nav ul.main-nav li {
+    margin: 0 10px;
+  }
+
+  /* Main */
+  main h2 {
+    font-size: 2rem;
+  }
+
+  main h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Posts */
+  section.posts {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  .post1,
+  .post2,
+  .post3,
+  .post4,
+  .post5,
+  .post6 {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  div.post p {
+    font-size: 0.79rem;
+    width: 80%;
+    height: 60px;
+  }
+
+  div.post p a {
+    font-size: 1.1rem;
+  }
+
+  /* Favourite posts */
+  section.fav-posts {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+
+  section.fav-posts div.fav-p1,
+  section.fav-posts div.fav-p2 {
+    height: 300px;
+  }
+
+  section.fav-posts div.post-v p {
+    font-size: 1.3rem;
+  }
+
+  /* Footer */
+  div.foot {
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  div.foot p {
+    margin-bottom: 10px;
+  }
+
+  div.foot p a {
+    font-size: 1rem;
+  }
+}
+
+@import url("../css/me.css");
+@import url("./about.css");
+@import url("./contact.css");
+@import url("./post1.css");
+@import url("./post2.css");
+@import url("./post3.css");
+@import url("./post4.css");
+@import url("./post5.css");
+@import url("./post6.css");
