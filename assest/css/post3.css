@@ -104,24 +104,23 @@ div.main-text {
   height: 400px;
 }
 div.left {
-  background-image: url("../imgs/pl1.jpg");
+  background-image: url("../imgs/gaza1.jpg");
   height: 400px;
   background-size: cover;
 }
 
 div.right {
-  background-image: url("../imgs/pl2.jpeg");
+  background-image: url("../imgs/gaza2.avif");
   height: 400px;
   background-size: cover;
 }
 
-div.secondary-text h4 {
-  margin-top: 50px;
-  font-size: 2rem;
+div.secondary-text {
+  margin: 30px 80px;
 }
 
-div.lastly-txt h4 {
-  margin-top: 40px;
+div.secondary-text h4 {
+  margin-top: 50px;
   font-size: 2rem;
 }
 

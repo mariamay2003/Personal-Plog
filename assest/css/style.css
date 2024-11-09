@@ -1,3 +1,4 @@
+/* import of the other css files in the botoom of this file */
 * {
   margin: 0;
   padding: 0;
@@ -199,6 +200,9 @@ section.fav-posts div.fav-p1 {
   background-image: url("../imgs/london.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+section.fav-posts figcaption {
+  margin-top: 21px;
 }
 
 section.fav-posts div.fav-p2 {
