@@ -104,23 +104,26 @@ div.main-text {
   height: 400px;
 }
 div.left {
-  background-image: url("../imgs/gaza1.jpg");
+  background-image: url("../imgs/pl1.jpg");
   height: 400px;
   background-size: cover;
+  border-radius: 20px;
 }
 
 div.right {
-  background-image: url("../imgs/gaza2.avif");
+  background-image: url("../imgs/pl2.jpeg");
   height: 400px;
   background-size: cover;
-}
-
-div.secondary-text {
-  margin: 30px 80px;
+  border-radius: 20px;
 }
 
 div.secondary-text h4 {
   margin-top: 50px;
+  font-size: 2rem;
+}
+
+div.lastly-txt h4 {
+  margin-top: 40px;
   font-size: 2rem;
 }
 
@@ -141,4 +144,77 @@ div.foot p a {
 
 div.foot p a:hover {
   color: #000000;
+}
+
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav h1#hm {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav ul.main-nav {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    font-size: 1rem;
+  }
+
+  nav ul.main-nav li {
+    margin: 5px 0;
+  }
+
+  main {
+    margin: 10px;
+  }
+
+  h2.main-h2 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+
+  main img {
+    height: 150px;
+    width: 150px;
+  }
+
+  ul.person-info {
+    font-size: 1rem;
+  }
+
+  ul.person-info li#spec {
+    flex-direction: column;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  div.main-text {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    height: auto;
+  }
+
+  div.left,
+  div.right {
+    height: 200px;
+  }
+
+  div.secondary-text h4,
+  div.lastly-txt h4 {
+    font-size: 1.5rem;
+  }
+
+  div.foot {
+    font-size: 0.9rem;
+    margin-top: 40px;
+  }
+
+  div.foot p a {
+    font-size: 1rem;
+  }
 }

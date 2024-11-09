@@ -103,3 +103,85 @@ div.foot p a {
 div.foot p a:hover {
   color: #000000;
 }
+
+/* Media Query for Mobile Devices with max-width: 400px */
+@media (max-width: 500px) {
+  body {
+    margin: 10px; /* Reduce the margin */
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav h1#hm {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav ul.main-nav {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    font-size: 1rem;
+  }
+
+  nav ul.main-nav li {
+    margin: 5px 0;
+  }
+
+  /* Contact Form Header */
+  main h3#con {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+
+  /* Contact Form */
+  form.col-form {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  form.col-form input,
+  form.col-form textarea {
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    padding: 8px;
+  }
+
+  form.col-form textarea {
+    height: 80px;
+  }
+
+  form.col-form input#submit {
+    font-size: 1rem;
+    font-weight: bolder;
+    background-color: #d6f1fa;
+    color: #375264;
+    border: none;
+  }
+
+  form.col-form input#submit:hover {
+    background-color: #f88853;
+    color: #d6f1fa;
+  }
+
+  /* Footer */
+  div.foot {
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  div.foot p {
+    margin-bottom: 10px;
+  }
+
+  div.foot p a {
+    font-size: 1rem;
+  }
+}

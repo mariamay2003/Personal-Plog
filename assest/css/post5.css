@@ -104,14 +104,14 @@ div.main-text {
   height: 400px;
 }
 div.left {
-  background-image: url("../imgs/pl1.jpg");
+  background-image: url("../imgs/istanbul.jpg");
   height: 400px;
   background-size: cover;
   border-radius: 20px;
 }
 
 div.right {
-  background-image: url("../imgs/pl2.jpeg");
+  background-image: url("../imgs/antalya.jpg");
   height: 400px;
   background-size: cover;
   border-radius: 20px;

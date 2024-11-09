@@ -110,3 +110,92 @@ div.foot p a {
 div.foot p a:hover {
   color: #000000;
 }
+
+/* Media Query for Mobile Devices with max-width: 500px */
+@media (max-width: 500px) {
+  body {
+    margin: 15px; /* Reduced margin for small screens */
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav h1#hm {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav ul.main-nav {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    font-size: 1rem;
+  }
+
+  nav ul.main-nav li {
+    margin: 5px 0;
+  }
+  /* Main Header */
+  #main-head {
+    font-size: 1.8rem;
+    margin-top: 20px;
+  }
+
+  /* Picture */
+  div.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img.me {
+    height: 230px; /* Reduced the image size */
+    margin-top: 20px;
+  }
+
+  /* Text Section */
+  div.main-txt p {
+    font-size: 1rem; /* Reduced font size */
+    margin-top: 15px;
+  }
+
+  div.main-txt p#specific {
+    font-size: 1.2rem;
+    text-shadow: -3px 2px 1px rgba(206, 89, 55, 0.63);
+  }
+
+  /* Social Links */
+  ul.nn {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  ul.nn li {
+    margin: 5px;
+  }
+
+  ul.nn li a {
+    font-size: 2.5rem; /* Reduced icon size */
+  }
+
+  /* Footer */
+  div.foot {
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  div.foot p {
+    margin-bottom: 10px;
+  }
+
+  div.foot p a {
+    font-size: 1rem;
+  }
+}

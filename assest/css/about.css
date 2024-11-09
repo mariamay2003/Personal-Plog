@@ -87,3 +87,72 @@ div.foot p a {
 div.foot p a:hover {
   color: #000000;
 }
+
+/* Media Query for Mobile Devices with max-width: 500px */
+@media (max-width: 500px) {
+  body {
+    margin: 10px; /* Reduce the margin */
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav h1#hm {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav ul.main-nav {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    font-size: 1rem;
+  }
+
+  nav ul.main-nav li {
+    margin: 5px 0;
+  }
+  /* Main Heading */
+  main h2 {
+    font-size: 1.4em;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* Paragraph */
+  main p {
+    font-size: 1rem;
+    text-align: justify; /* Justify text for better flow */
+  }
+
+  main ul {
+    padding-left: 20px; /* Add some padding to the list items */
+  }
+
+  main ul li {
+    font-size: 1rem;
+    margin-bottom: 10px; /* Add spacing between items */
+  }
+
+  p.l {
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+
+  div.foot {
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  div.foot p {
+    margin-bottom: 10px;
+  }
+
+  div.foot p a {
+    font-size: 1rem;
+  }
+}
