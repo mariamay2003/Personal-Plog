@@ -256,6 +256,7 @@ div.foot p a:hover {
   color: #000000;
 }
 
+/* responsive design for mobiles */
 @media (max-width: 500px) {
   nav {
     flex-direction: column;
@@ -340,7 +341,7 @@ div.foot p a:hover {
     font-size: 0.8rem;
   }
 }
-
+/* responsive design for tablets */
 @media (min-width: 501px) and (max-width: 1200px) {
   /* Nav */
   nav {
