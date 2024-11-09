@@ -4,21 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  /* font-family: "Staatliches", sans-serif;
-  font-weight: 400; */
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   background-color: #375264;
   color: #d6f1fa;
-  /* display: grid;
-  grid-template-columns: repeat(1, 100%);
-  grid-template-areas:
-    "top top top top top top top top top top top top"
-    "main main main main main main main main main main main main"
-    "l l l l m m m m r r r r"
-    "ll ll ll ll mm mm mm mm rr rr rr rr"
-    "ft ft ft ft ft ft ft ft ft ft ft ft";
-  gap: 10px; */
   margin: 30px;
 }
 
@@ -31,7 +20,7 @@ nav {
   border-radius: 15px;
 }
 
-nav h1 {
+nav h1#hm {
   width: 200px;
   font-size: 1.6rem;
   color: #d6f1fa;
@@ -262,3 +251,7 @@ div.foot p a {
 div.foot p a:hover {
   color: #000000;
 }
+
+@import url("../css/me.css");
+@import url("./about.css");
+@import url("./contact.css");
